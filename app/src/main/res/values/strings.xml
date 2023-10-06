@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GradeCalc</string>
+    <string name="instructions">Insert Your Scores for the Prelims and Finals</string>
+    <string name="prelim_1">Prelim 1</string>
+    <string name="prelim_2">Prelim 2</string>
+    <string name="final_exam">Final Exam</string>
+    <string name="calculate">Calculate Course Grade</string>
+    <string name="your_final_grade_is">Your Final Grade is:</string>
+</resources>

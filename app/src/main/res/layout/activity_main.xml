@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1500dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/baseline_calculate_20"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/green" />
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instructions"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/prelim1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prelim_1"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/instructions"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/prelim2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prelim_2"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/prelim1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/finalExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/final_exam"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/prelim2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/prelim1Score"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:color="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/prelim1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/prelim1"
+        android:layout_marginEnd="30dp"/>
+    <EditText
+        android:id="@+id/prelim2Score"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/prelim2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/prelim2"
+        android:layout_marginEnd="30dp"/>
+
+    <EditText
+        android:id="@+id/finalExamScore"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/finalExam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toEndOf="@id/finalExam"
+        android:layout_marginEnd="30dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/calculate"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/finalExam" />
+
+    <TextView
+        android:id="@+id/drumroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_final_grade_is"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/displayGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/drumroll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
